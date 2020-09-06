@@ -4,20 +4,57 @@
     padding: 0
     font-family: 'Roboto', sans-serif
 
-.grid-container
-    width: 1140px
-    margin: 82px auto 0 auto
-    display: grid
-    grid-template-columns: repeat(4, 240px)
-    grid-template-rows: repeat(2, 260px)
-    grid-auto-rows: 260px
-    gap: 60px
 
-.news-item
-    &__img
-        width: 100%
-    &__descr
-        margin-top: 15px
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+.grid-container
+    display: grid
+    grid-template-columns: repeat(3, minmax(150px, 300px))
+    grid-template-rows: repeat(3, minmax(100px, auto))
+    grid-auto-rows: minmax(100px, auto)
+    gap: 10px
+    justify-content: space-around
+    // align-items: center
+
+.grid-elem
+    background-color: rgba(1, 1, 96, 1)
+    color: #fff
+    line-height: 50px
+    text-align: center
+    font-size: 26px
+    border: 1px solid #000
+    border-radius: 4px
+
+#first
+    // grid-column-start: 1
+    // grid-column-end: 3
+    // grid-column: 1 / 3
+    // align-self: self-start
+    // justify-self: end
+#second
+    // grid-column-start: 3
+    // grid-row-start: 2
+    // grid-row-end: 4
+    // grid-row: 2 / 4
+    // align-self: self-end
+    // justify-self: center
+#third
+    // grid-row-start: 3
+    // grid-row-end: 5
+    // grid-column-start: 2
+    // align-self: center
+// .grid-container
+//     width: 1140px
+//     margin: 82px auto 0 auto
+//     display: grid
+//     grid-template-columns: repeat(4, 240px)
+//     grid-template-rows: repeat(2, 260px)
+//     grid-auto-rows: 260px
+//     gap: 60px
+
+// .news-item
+//     &__img
+//         width: 100%
+//     &__descr
+//         margin-top: 15px
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 16px;
